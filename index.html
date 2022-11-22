@@ -12,9 +12,9 @@
   <body> 
     <div class="mapa"> 
       <h2>Mapa del Barrio de Parque Patricios</h2>
-      <input class="coordenada" type="text" value="latitud" name="latitud">
-      <input class="coordenada" type="text" value="longitud" name="longitud">
-      <button class="buscar">Buscar</button>
+      <input class="coordenada" id="latitud" type="text" value="-34.64572" name="latitud">
+      <input class="coordenada" id="longitud" type="text" value="-58.39917" name="longitud">
+      <button id="buscar" onlink="localizar()">Localizar</button>
       <div id="map"> </div>
     </div>
     <script src="script.js"></script>

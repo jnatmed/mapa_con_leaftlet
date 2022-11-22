@@ -12,8 +12,8 @@ html(lang="en")
 
         .mapa 
             h2 Mapa del Barrio de Parque Patricios
-            input.coordenada(type="text" value="latitud" name="latitud")
-            input.coordenada(type="text" value="longitud" name="longitud")
-            button.buscar Buscar
+            input#latitud.coordenada(type="text" value="-34.64572" name="latitud")
+            input#longitud.coordenada(type="text" value="-58.39917" name="longitud")
+            button#buscar(onlink="localizar()") Localizar
             #map 
         script(src="script.js")
