@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="">
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""> </script>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="#">
+    <link>
     <title>Manejo de mapa </title>
   </head>
   <body> 
@@ -14,8 +16,14 @@
       <h2>Mapa del Barrio de Parque Patricios</h2>
       <input class="coordenada" id="latitud" type="text" value="-34.64572" name="latitud">
       <input class="coordenada" id="longitud" type="text" value="-58.39917" name="longitud">
-      <button id="buscar" onlink="localizar()">Localizar</button>
+      <button id="localizar" onlink="localizar()">Localizar</button>
       <div id="map"> </div>
+    </div>
+    <div class="nuevo_punto">
+      <label>Nuevo Punto</label>
+      <input class="coordenada" id="latitud" type="text" value="" name="nlatitud">
+      <input class="coordenada" id="longitud" type="text" value="" name="nlongitud">
+      <button id="agregar" onlink="agregar()">Agregar Punto</button>
     </div>
     <script src="script.js"></script>
   </body>

@@ -7,6 +7,8 @@ html(lang="en")
         link(rel="stylesheet", href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="")
         script(src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin="") 
         link(rel="stylesheet", href="estilos.css")
+        link(rel="shortcut icon" href="#")
+        link
         title Manejo de mapa 
     body 
 
@@ -14,6 +16,11 @@ html(lang="en")
             h2 Mapa del Barrio de Parque Patricios
             input#latitud.coordenada(type="text" value="-34.64572" name="latitud")
             input#longitud.coordenada(type="text" value="-58.39917" name="longitud")
-            button#buscar(onlink="localizar()") Localizar
+            button#localizar(onlink="localizar()") Localizar
             #map 
+        .nuevo_punto
+            label Nuevo Punto
+            input#latitud.coordenada(type="text" value="" name="nlatitud") 
+            input#longitud.coordenada(type="text" value="" name="nlongitud")
+            button#agregar(onlink="agregar()") Agregar Punto
         script(src="script.js")
